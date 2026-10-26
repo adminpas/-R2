@@ -1,0 +1,17 @@
+flowchart TD
+  C[واجهة العملاء PWA] --> EDGE[بوابة HTTPS / WAF حسب الحاجة]
+  A[تطبيق الإدارة المنفصل] --> EDGE
+  M[بوابة التاجر] --> EDGE
+  EDGE --> AUTH[مصادقة وتفويض API]
+  AUTH --> BIZ[خدمات الأعمال]
+  BIZ --> DB[(قاعدة البيانات: قرار إنتاج مطلوب)]
+  BIZ --> QUAR[حجر الوسائط]
+  QUAR --> SCAN[فحص AV / Magic Bytes / Sandbox]
+  SCAN --> PUB[مخزن وسائط منشور]
+  BIZ --> LEDGER[دفتر قيود مزدوجة]
+  BIZ --> AUDIT[تدقيق وأحداث أمن]
+  DB --> BK[خدمة نسخ احتياطي]
+  PUB --> BK
+  BK --> LOCAL[نسخة محلية مشفرة]
+  BK --> OFFSITE[نسخة خارجية محمية]
+  BK --> EXPORT[تقارير مقروءة محدودة]

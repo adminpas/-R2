@@ -1,0 +1,52 @@
+erDiagram
+  USERS ||--o{ AUDIT_LOGS : acts
+  USERS ||--o{ SESSIONS : owns
+  USERS ||--o| MERCHANT_STORES : owns
+  CATEGORIES ||--o{ CATEGORIES : parent_of
+  CATEGORIES ||--o{ EQUIPMENT_PRODUCTS : classifies
+  MERCHANT_STORES ||--o{ SPARE_PARTS : owns
+  SPARE_PART_CATEGORIES ||--o{ SPARE_PARTS : classifies
+  EQUIPMENT_PRODUCTS ||--o{ BOOKINGS : reserved
+  EQUIPMENT_PRODUCTS ||--o{ ORDER_ITEMS : sold_as
+  ORDERS ||--o{ ORDER_ITEMS : contains
+  ORDERS ||--o{ PAYMENT_TRANSACTIONS : paid_by
+  JOURNAL_TRANSACTIONS ||--|{ JOURNAL_ENTRIES : contains
+  FINANCIAL_ACCOUNTS ||--o{ JOURNAL_ENTRIES : posts_to
+  MEDIA_ASSETS ||--o{ MEDIA_SCAN_RESULTS : screened_by
+  BACKUP_JOBS ||--o{ BACKUP_ARTIFACTS : creates
+  USERS {
+    string id PK
+    string username UK
+    string password_hash
+    string status
+  }
+  MERCHANT_STORES {
+    string id PK
+    string owner_user_id FK
+    string status
+  }
+  EQUIPMENT_PRODUCTS {
+    string id PK
+    string category_id FK
+    string condition
+    integer price_minor
+    string currency
+  }
+  SPARE_PARTS {
+    string id PK
+    string merchant_store_id FK
+    string part_number
+    integer stock_quantity
+  }
+  JOURNAL_TRANSACTIONS {
+    string id PK
+    string idempotency_key UK
+    string status
+  }
+  JOURNAL_ENTRIES {
+    string id PK
+    string transaction_id FK
+    string account_id FK
+    integer amount_minor
+    string side
+  }
