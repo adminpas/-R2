@@ -1,0 +1,18 @@
+{
+  "id": "/",
+  "name": "معرض شركة النجيب المتطورة لمعدات المغاسل",
+  "short_name": "معرض النجيب",
+  "description": "معرض المعدات الصناعية وخدمات المغاسل",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+    {"src":"/static/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"/static/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
