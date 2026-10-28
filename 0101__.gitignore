@@ -1,0 +1,45 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Runtime database / journals and backups
+app/data/*.db
+app/data/*.sqlite
+app/data/*.sqlite3
+app/data/*-wal
+app/data/*-shm
+app/storage/
+app/system_backups/
+app/recovery_output/
+app/recovery-output/
+*.njb
+*.bak
+*.backup
+
+# Python / tools
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Node/build/IDE
+node_modules/
+dist/
+build/
+.next/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives must not be nested in source repo
+*.zip
+*.7z
+*.rar
