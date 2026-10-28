@@ -1,0 +1,8 @@
+﻿volume_code,owner_scope,tenant_id,purpose,example_mount_root,filesystem_uuid_or_serial_fingerprint,quota_bytes,encryption_key_ref,status,health_check_interval_minutes,backup_policy_ref,notes_ar
+NAJ-COMPANY-MEDIA,company,company,approved_company_media,/srv/najeeb/storage/company-media,configure_on_host,,kms://najeeb/company-media,OFFLINE,15,media-standard,"جذر وسائط الشركة؛ مثال Linux فقط ويُضبط بعد معرفة نظام التشغيل"
+NAJ-MERCHANT-01,merchant,merchant-1,merchant_working,/srv/najeeb/storage/merchant-01,configure_on_host,,kms://najeeb/merchant-01,OFFLINE,15,merchant-standard,"وحدة التاجر الأول؛ لا يستخدم المسار قبل فحص UUID والصلاحيات"
+NAJ-MERCHANT-02,merchant,merchant-2,merchant_working,/srv/najeeb/storage/merchant-02,configure_on_host,,kms://najeeb/merchant-02,OFFLINE,15,merchant-standard,"وحدة التاجر الثاني"
+NAJ-MERCHANT-03,merchant,merchant-3,merchant_working,/srv/najeeb/storage/merchant-03,configure_on_host,,kms://najeeb/merchant-03,OFFLINE,15,merchant-standard,"وحدة التاجر الثالث"
+NAJ-QUARANTINE,system,system,quarantine,/srv/najeeb/quarantine,configure_on_host,,kms://najeeb/quarantine,OFFLINE,5,ephemeral-quarantine,"الأفضل أن يكون جذر الحجر منفصلًا/معزولًا؛ لا ينشر مباشرة"
+NAJ-BACKUP-LOCAL,system,system,protected_backup,/srv/najeeb/backup-local-protected,configure_on_host,,kms://najeeb/backup-local,OFFLINE,15,backup-immutable,"نسخة محلية محمية؛ ليست بديلًا عن نسخة خارجية"
+NAJ-BACKUP-OFFSITE,system,system,offsite_immutable,external://provider-bucket/najeeb-prod,provider_object_lock,,kms://najeeb/backup-offsite,OFFLINE,15,backup-immutable,"اسم توضيحي؛ يلزم إعداد مزود حقيقي وقفل احتفاظ"
