@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 790" role="img" aria-labelledby="title desc">
+  <title id="title">شركة النجيب المتطورة لمعدات المغاسل</title>
+  <desc id="desc">الشعار الذهبي الكامل مع غسالة وقطرة ماء ورذاذ أزرق، بخلفية شفافة.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#754506"/>
+      <stop offset=".17" stop-color="#e99710"/>
+      <stop offset=".4" stop-color="#fff09a"/>
+      <stop offset=".58" stop-color="#f4b927"/>
+      <stop offset=".78" stop-color="#bd7007"/>
+      <stop offset="1" stop-color="#ffe37a"/>
+    </linearGradient>
+    <linearGradient id="goldBright" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7bf"/>
+      <stop offset=".38" stop-color="#ffd65d"/>
+      <stop offset=".72" stop-color="#e59a10"/>
+      <stop offset="1" stop-color="#8b5005"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#603702"/>
+      <stop offset=".52" stop-color="#b96c06"/>
+      <stop offset="1" stop-color="#ffc83d"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9f8ff"/>
+      <stop offset=".18" stop-color="#4edcff"/>
+      <stop offset=".5" stop-color="#078cff"/>
+      <stop offset=".82" stop-color="#004eb7"/>
+      <stop offset="1" stop-color="#012765"/>
+    </linearGradient>
+    <radialGradient id="bubble" cx="35%" cy="25%" r="75%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".98"/>
+      <stop offset=".22" stop-color="#88eaff" stop-opacity=".92"/>
+      <stop offset=".63" stop-color="#078cff" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#003e9a" stop-opacity=".15"/>
+    </radialGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".18" stop-color="#fff7c6" stop-opacity=".96"/>
+      <stop offset=".58" stop-color="#ffc32e" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ffc32e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="goldShadow" x="-25%" y="-25%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#5d3603" flood-opacity=".42"/>
+    </filter>
+    <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textShadow" x="-25%" y="-40%" width="150%" height="190%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#4c2b00" flood-opacity=".92"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#fff1a1" flood-opacity=".42"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent background -->
+
+  <!-- blue splash behind mark -->
+  <g filter="url(#blueGlow)" opacity=".96">
+    <path d="M126 354c33-30 58-57 67-100-2 53-17 91-52 129 31-7 55-22 77-47-17 37-44 61-86 75 32 7 61 3 92-12-30 29-69 40-113 28-33-9-53-31-55-55 17 10 42 5 70-18z" fill="url(#blue)"/>
+    <path d="M594 190c23 53 20 92 3 130 38-30 51-64 48-108 31 47 31 92 7 137 27-11 45-27 58-52-4 60-37 104-99 132-36 16-80 10-109-10 52-33 83-83 92-149z" fill="url(#blue)"/>
+    <path d="M497 421c75-9 130-30 180-74-23 49-58 82-109 104 37 1 69-7 99-26-28 38-70 60-129 64-40 3-80-6-109-25 19-16 40-30 68-43z" fill="url(#blue)"/>
+    <path d="M177 413c85 49 191 53 300 2-85 77-211 100-315 50-38-18-65-46-78-78 27 21 57 29 93 26z" fill="#068cff" opacity=".75"/>
+
+    <!-- water arcs -->
+    <path d="M106 353c-32 6-52-7-57-32 30 10 50 1 64-27-2 28 12 45 42 50-17 8-33 11-49 9z" fill="url(#blue)"/>
+    <path d="M655 334c43-28 56-61 39-101 33 27 39 63 18 107-12 24-29 42-52 53 9-21 7-41-5-59z" fill="url(#blue)"/>
+
+    <!-- bubbles -->
+    <g fill="url(#bubble)" stroke="#7ce8ff" stroke-width="3">
+      <circle cx="103" cy="307" r="17"/><circle cx="88" cy="264" r="9"/><circle cx="132" cy="230" r="6"/>
+      <circle cx="168" cy="397" r="11"/><circle cx="206" cy="423" r="7"/><circle cx="236" cy="445" r="4"/>
+      <circle cx="625" cy="156" r="9"/><circle cx="657" cy="194" r="14"/><circle cx="686" cy="257" r="8"/>
+      <circle cx="680" cy="361" r="13"/><circle cx="638" cy="413" r="8"/><circle cx="600" cy="445" r="5"/>
+      <circle cx="536" cy="153" r="5"/><circle cx="569" cy="170" r="7"/>
+    </g>
+  </g>
+
+  <!-- enclosing golden orbit -->
+  <path d="M122 360C81 181 203 49 380 48c129-1 237 66 286 171" fill="none" stroke="url(#gold)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M129 345C111 239 169 140 264 91" fill="none" stroke="#ffe68b" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+
+  <!-- crescent and lower waves -->
+  <path d="M175 213c-67 70-71 196 16 261 67 51 169 37 238-28-73 27-161 13-212-47-49-58-60-128-42-186z" fill="url(#gold)" filter="url(#goldShadow)"/>
+  <path d="M150 424c85 68 229 51 342-5 69-34 122-59 196-31-90-10-150 37-232 80-109 56-241 56-306-44z" fill="url(#goldDark)"/>
+  <path d="M158 474c115 38 253 4 359-42 55-24 102-31 151-16-69 4-112 34-173 66-108 57-244 78-337-8z" fill="url(#goldBright)"/>
+
+  <!-- N mark -->
+  <path d="M238 153c0-21 14-35 34-35h39c13 0 23 5 32 17l145 193V154c0-21 14-35 34-35h28v283h-58c-14 0-25-6-34-18L304 196v160c0 22-14 36-35 36h-31V153z" fill="url(#goldBright)" filter="url(#goldShadow)"/>
+  <path d="M294 137l179 240" fill="none" stroke="#fff5b1" stroke-width="5" stroke-linecap="round" opacity=".32"/>
+
+  <!-- droplet -->
+  <path d="M310 249s-45 64-45 95c0 33 22 57 49 57s49-24 49-57c0-31-53-95-53-95z" fill="url(#gold)"/>
+  <path d="M313 288s-25 42-25 61c0 19 11 31 25 31 15 0 26-12 26-31 0-19-26-61-26-61z" fill="#fff3a9" opacity=".72"/>
+
+  <!-- washing machine -->
+  <g transform="translate(490 177)" filter="url(#goldShadow)">
+    <rect x="0" y="0" width="181" height="225" rx="13" fill="url(#goldBright)"/>
+    <rect x="12" y="14" width="157" height="41" rx="9" fill="none" stroke="#855006" stroke-width="7"/>
+    <rect x="28" y="27" width="79" height="10" rx="5" fill="#925706"/>
+    <circle cx="143" cy="34" r="9" fill="#704104"/><circle cx="123" cy="34" r="6" fill="#704104"/>
+    <circle cx="91" cy="137" r="65" fill="#09182c" stroke="#744204" stroke-width="11"/>
+    <circle cx="91" cy="137" r="48" fill="url(#bubble)" stroke="#079aff" stroke-width="6"/>
+    <path d="M45 148c28-18 43-7 61 11 13 13 30 13 46-4-11 30-33 46-61 46-26 0-46-18-46-53z" fill="url(#blue)"/>
+    <circle cx="112" cy="124" r="9" fill="#d9f8ff"/><circle cx="133" cy="144" r="7" fill="#43ceff"/><circle cx="116" cy="162" r="5" fill="#e8fbff"/>
+  </g>
+
+  <!-- gold sparkle -->
+  <g transform="translate(584 92)" filter="url(#blueGlow)">
+    <circle r="33" fill="url(#spark)"/>
+    <path d="M0-33V33M-33 0H33" stroke="#fff8c9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-21-21L21 21M21-21L-21 21" stroke="#ffd35d" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Company name integrated into the moving logo -->
+  <g filter="url(#textShadow)">
+    <text x="380" y="590" text-anchor="middle" direction="rtl" unicode-bidi="plaintext"
+      font-family="Tajawal, Arial, sans-serif" font-size="70" font-weight="900"
+      fill="url(#goldBright)" stroke="#5e3503" stroke-width="3" paint-order="stroke fill">
+      شركة النجيب المتطورة
+    </text>
+    <rect x="185" y="617" width="390" height="68" rx="30" fill="#10131a" stroke="url(#gold)" stroke-width="8"/>
+    <text x="380" y="666" text-anchor="middle" direction="rtl" unicode-bidi="plaintext"
+      font-family="Tajawal, Arial, sans-serif" font-size="43" font-weight="900" fill="url(#goldBright)">
+      معدات المغاسل
+    </text>
+    <path d="M99 650H176M584 650h77" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+    <text x="380" y="738" text-anchor="middle" direction="rtl" unicode-bidi="plaintext"
+      font-family="Tajawal, Arial, sans-serif" font-size="27" font-weight="600" fill="#e8b84e">
+      جودة  ·  تقنية  ·  خدمة أفضل
+    </text>
+  </g>
+</svg>
